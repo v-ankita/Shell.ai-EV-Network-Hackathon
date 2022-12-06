@@ -19,11 +19,14 @@ charging points within the region
 - sample_submission.csv - was given to show format of the csv submission file
 
 ### Aproach:
-- Forecasting - We tried moving average method, simple exponential smoothening, Holt's exponential smoothening, polynomial regression considering each supply point's data over the years as a separate time series. HOLT'S gave the most suitabe forecast.
+- **Forecasting** - We tried moving average method, simple exponential smoothening, Holt's exponential smoothening, polynomial regression considering each supply point's data over the years as a separate time series. HOLT'S gave the most suitabe forecast.
 Different hyperparameters were used in Holt's forcasting for different groups, divided based on the change in demand over the years.
-- Distance matrix - spatial distance between every demand and supply point combination was found using Minkowski distance formula.
-- Clustering - DBSCAN was used to make clusters of demand points with similar forecasted demand trends.
-- DS weights - we made a mathematical formula using distance-based fractions of demands for finding how much does every demand point influence the demand at every supply point, with which we ultimately calculated the most optimal distribution of charging stations to meet the demand.
+
+- **Distance matrix** - spatial distance between every demand and supply point combination was found using Minkowski distance formula.
+
+- **Clustering** - DBSCAN was used to make clusters of demand points with similar forecasted demand trends.
+
+- **DS weights** - we made a mathematical formula using distance-based fractions of demands for finding how much does every demand point influence the demand at every supply point, with which we ultimately calculated the most optimal distribution of charging stations to meet the demand.
 
 
 ![image](https://user-images.githubusercontent.com/85495621/205630615-a9616f9c-268c-4625-a9ac-e10dd4612949.png)
