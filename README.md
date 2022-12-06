@@ -3,12 +3,11 @@
 ### An optimaization problem:
 In Shell.ai Hackathon 2022, the challenge was to optimally place EV charging stations so that the configuration remains robust to demographic changes. Our task was to
 forecast EV charging demand in the coming years based on previous data and arrange charging stations to meet the demand and optimize geographical efficiency for users looking for chargers. The solution had to meet a few practical constraints, such as demand-supply balance and other mathematical objectives. The final submission was in csv format.<br>
-The detailed problem statement, including constraints and dscription of the data can be viewed in Problem_statement.pdf.
+The detailed problem statement, including constraints and description of the data can be viewed in Problem_statement.pdf.
 
 ### Data provided:
 1. A time-series of EV charging demand data over a region
-2. A set of parking locations with respective parking capacity/slots, i.e., potential EV
-charging points within the region
+2. A set of parking locations with respective parking capacity/slots, i.e. potential EV charging points within the region
 3. Details of the existing EV infrastructure
 4. The cost of charging point installations and operations
 5. Other data related to power constraints, rate of charging of fast & slow chargers
