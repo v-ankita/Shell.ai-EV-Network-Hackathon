@@ -6,12 +6,12 @@ forecast EV charging demand in the coming years based on previous data and arran
 The detailed problem statement, including constraints and dscription of the data can be viewed in Problem_statement.pdf.
 
 ### Data provided:
-1. a time-series of EV charging demand data over a region
-2. a set of parking locations with respective parking capacity/slots, i.e., potential EV
+1. A time-series of EV charging demand data over a region
+2. A set of parking locations with respective parking capacity/slots, i.e., potential EV
 charging points within the region
-3. details of the existing EV infrastructure
-4. the cost of charging point installations and operations
-5. other data related to power constraints, rate of charging of fast & slow chargers
+3. Details of the existing EV infrastructure
+4. The cost of charging point installations and operations
+5. Other data related to power constraints, rate of charging of fast & slow chargers
 
 2 datasets:
 - demand_history.csv - Contains history of EV charging demand over a region from the year 2010 to 2018
@@ -19,9 +19,12 @@ charging points within the region
 - sample_submission.csv - was given to show format of the csv submission file
 
 ### Aproach:
-forecast - methods tried
-distance matrix - distances
-calculating formula for assigning demand-supply weights
+- Forecasting - We tried moving average method, simple exponential smoothening, Holt's exponential smoothening, polynomial regression considering each supply point's data over the years as a separate time series. HOLT'S gave the most suitabe forecast.
+Different hyperparameters were used in Holt's forcasting for different groups, divided based on the change in demand over the years.
+- Distance matrix - spatial distance between every demand and supply point combination was found using Minkowski distance formula.
+- Clustering - DBSCAN was used to make clusters of demand points with similar forecasted demand trends.
+- DS weights - we made a mathematical formula using distance-based fractions of demands for finding how much does every demand point influence the demand at every supply point, with which we ultimately calculated the most optimal distribution of charging stations to meet the demand.
+
 
 ![image](https://user-images.githubusercontent.com/85495621/205630615-a9616f9c-268c-4625-a9ac-e10dd4612949.png)
 
