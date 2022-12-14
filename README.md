@@ -1,6 +1,6 @@
 # Shell.ai-EV-Network-Hackathon
 
-### An optimaization problem:
+### An optimization problem:
 In Shell.ai Hackathon 2022, the challenge was to optimally place EV charging stations so that the configuration remains robust to demographic changes. Our task was to
 forecast EV charging demand in the coming years based on previous data and arrange charging stations to meet the demand and optimize geographical efficiency for users looking for chargers. The solution had to meet a few practical constraints, such as demand-supply balance and other mathematical objectives. The final submission was in csv format.<br>
 The detailed problem statement, including constraints and description of the data can be viewed in Problem_statement.pdf.
