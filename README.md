@@ -21,7 +21,7 @@ The detailed problem statement, including constraints and description of the dat
 - **Forecasting** - We tried moving average method, simple exponential smoothening, Holt's exponential smoothening, polynomial regression considering each supply point's data over the years as a separate time series. HOLT'S gave the most suitabe forecast.
 Different hyperparameters were used in Holt's forcasting for different groups, divided based on the change in demand over the years.
 
-- **Distance matrix** - spatial distance between every demand and supply point combination was found using Minkowski distance formula.
+- **Distance matrix** - spatial distance between every demand and supply point combination was found using the Manhattan distance formula.
 
 - **Clustering** - DBSCAN was used to make clusters of demand points with similar forecasted demand trends.
 
